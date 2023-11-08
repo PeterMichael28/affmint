@@ -2,10 +2,17 @@ import { useState } from 'react';
 import logo from '../assets/logo.png';
 import { FiMenu } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
+
+// smooth={!isDesktop ? false : true}
+// spy
+// offset={-50}
+// activeClass="active"
+// onClick={() => isMobile && setIsOpen(false)}
+
 const Header = () => {
  const [showMobile, setShowMobile] = useState(false);
  return (
-  <header className="bg-white flex-between w-full py-3 md:py-5">
+  <header className="bg-white flex-between w-full py-3 md:py-5 ">
    <div className="flex justify-between items-center w-full max-w-[1100px] mx-auto">
     <div className="flex md:justify-center md:w-fit w-full justify-between items-center gap-8  px-6 md:px-0">
      <img

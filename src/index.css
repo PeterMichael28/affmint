@@ -33,7 +33,9 @@
   font-family: 'AvenirRoman'
 }
 
-
+body {
+  overflow-x: hidden;
+}
 @layer utilities {
 
   .flex-center {
@@ -46,6 +48,10 @@
 
   .nav-li {
     @apply md:text-[.9rem] text-[1.1rem] text-white font-[500] md:text-pry hover:text-pry md:hover:text-sec transition-all duration-300 hover:scale-110 cursor-pointer
+  }
+
+  .active {
+    @apply  text-pry md:text-sec scale-110
   }
 
   /* thumb styles */
